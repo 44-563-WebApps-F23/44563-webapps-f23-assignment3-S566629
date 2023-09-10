@@ -7,10 +7,12 @@
     <body>
       <h1>Sai kumar Thangalla Muni Venkata</h1>
       <h3>My Vacation Spot is Kailasakona Waterfall at India.</h3>
-      <p> I like waterfall in every weeken as the reminder of the
-        <b>planet's</b> untamed, natural beauty, climate is good and an opportunity to
-        re-establish one's connection to the peace of nature. Every time we
-        visit the place, it gives us a lot of <b>pasitive energy</b>. 
+      <p>
+        I like waterfall in every weeken as the reminder of the
+        <b>planet's</b> untamed, natural beauty, climate is good and an
+        opportunity to re-establish one's connection to the peace of nature.
+        Every time we visit the place, it gives us a lot of
+        <b>pasitive energy</b>.
       </p>
 
       <hr />
@@ -35,16 +37,12 @@
 
       <a href="./mystats.html">link for mystats.html file to open</a>
 
-      <hr>
+      <hr />
       <h2>Sports Table: List of Sports Recommended to Play:</h2>
       <table border="1">
         <tr>
-          <th>
-            S.No
-          </th>
-          <th>
-            Sports Name
-          </th>
+          <th>S.No</th>
+          <th>Sports Name</th>
         </tr>
         <tr>
           <td>01</td>
@@ -64,24 +62,19 @@
         </tr>
       </table>
 
-      <hr>
+      <hr />
 
       <p>
-        The list of sports showed in table are recommended to  someone to try because sports playing gives filtness and inrease creativity process of the bain and it leads to make us good at physically and mentally strong.
+        The list of sports showed in table are recommended to someone to try
+        because sports playing gives filtness and inrease creativity process of
+        the bain and it leads to make us good at physically and mentally strong.
       </p>
-    
 
       <table border="1">
         <tr>
-          <th>
-            Name of a Sport
-          </th>
-          <th>
-            Reason to Recommend to play
-          </th>
-          <th>
-            Hours in an average week recommend to play
-          </th>
+          <th>Name of a Sport</th>
+          <th>Reason to Recommend to play</th>
+          <th>Hours in an average week recommend to play</th>
         </tr>
 
         <tr>
@@ -91,7 +84,10 @@
         </tr>
         <tr>
           <td>Badminton</td>
-          <td>Its play is very good for us to improves our concentration and focus.</td>
+          <td>
+            Its play is very good for us to improves our concentration and
+            focus.
+          </td>
           <td>6 hrs</td>
         </tr>
         <tr>
@@ -104,12 +100,45 @@
           <td>Improves agility and mental resilience while playing the game</td>
           <td>8 hrs</td>
         </tr>
-
       </table>
 
-     
-
       
+      
+      <hr />
+      <h2>Code Fencing</h2>
+
+      <q>
+        <pre>
+          
+        wp.template = _.memoize(function ( id ) {
+        var compiled,
+            /*
+             * Underscore's default ERB-style templates are incompatible with PHP
+             * when asp_tags is enabled, so WordPress uses Mustache-inspired templating syntax.
+             *
+             * @see trac ticket #22344.
+             */
+            options = {
+                evaluate:    /<#([\s\S]+?)#>/g,
+                interpolate: /\{\{\{([\s\S]+?)\}\}\}/g,
+                escape:      /\{\{([^\}]+?)\}\}(?!\})/g,
+                variable:    'data'
+            };
+    
+        return function ( data ) {
+            compiled = compiled || _.template( $( '#tmpl-' + id ).html(), null, options );
+            return compiled( data );
+        };
+    });
+          
+       </pre>
+      </q>
+
+
+      <a href="https://stackoverflow.com/questions/32909029/syntax-in-wordpress">link for stock overflow code file to open</a>
+
+
+
     </body>
   </html>
 </DOCTYPE>
