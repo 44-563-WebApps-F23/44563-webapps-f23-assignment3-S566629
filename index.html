@@ -1,10 +1,11 @@
 <DOCTYPE>
   <html>
     <head>
-      <title>Details about me</title>
+      <title>Details about Student</title>
     </head>
 
     <body>
+      <a href="./bonus.html">BONUS</a>
       <h1>Sai kumar Thangalla Muni Venkata</h1>
       <h3>My Vacation Spot is Kailasakona Waterfall at India.</h3>
       <p>
@@ -17,25 +18,36 @@
 
       <hr />
 
-      <h3>Activities Did at My Favorite Vacation Spot:</h3>
+      <h3>Activities Did at My Favourite Vacation Spot:</h3>
 
       <ol>
-        <li>First we did Swimming.</li>
+        <li>First we did Swimming.
+          <ol>
+            <li>Fast swimming</li>
+            <li>underwater swimming</li>
+          </ol>
+        </li>
         <li>Later we had Biriyani food.</li>
         <li>After we did Dancing</li>
         <li>and Playing Games.</li>
         <li>Finally we did Trecking and finishes my trip.</li>
       </ol>
 
+      <h3>Favorite Dishes had at my vacation spot</h3>
       <ul>
         <li>Chciken Biriyani</li>
         <li>Curd Rice</li>
-        <li>Pizza</li>
+        <li>Pizza
+          <ul>
+            <li>Veg Pizza</li>
+            <li>Non Veg Pizza</li>
+          </ul>
+        </li>
         <li>Mango Juice</li>
         <li>Hot Chips</li>
       </ul>
 
-      <a href="./mystats.html">link for mystats.html file to open</a>
+      <a href="./mystats.html">Please click to know the interesting things about me</a>
 
       <hr />
       <h2>Sports Table: List of Sports Recommended to Play:</h2>
@@ -107,7 +119,9 @@
       <hr />
       <h2>Code Fencing</h2>
 
-      <q>
+
+
+      <h2>Stock overflow wordpress code</h2>
         <pre>
           
         wp.template = _.memoize(function ( id ) {
@@ -130,13 +144,29 @@
             return compiled( data );
         };
     });
+
+    <blockquote>
+      <a href="https://stackoverflow.com/questions/32909029/syntax-in-wordpress">link for stock overflow code file to open</a>
+    </blockquote>
+
+    
           
        </pre>
-      </q>
+       <h2>css-tricks.com - wordpress code</h2>
 
+       <pre>
+       add_filter( 'post_thumbnail_html', 'remove_width_attribute', 10 );
+       add_filter( 'image_send_to_editor', 'remove_width_attribute', 10 );
 
-      <a href="https://stackoverflow.com/questions/32909029/syntax-in-wordpress">link for stock overflow code file to open</a>
-
+       function remove_width_attribute( $html ) {
+       $html = preg_replace( '/(width|height)="\d*"\s/', "", $html );
+       return $html;
+}
+      </pre>
+   
+       <blockquote>
+       <a href="https://css-tricks.com/snippets/wordpress/remove-width-and-height-attributes-from-inserted-images/">link for stock overflow code file to open</a>
+       </blockquote>
 
 
     </body>
